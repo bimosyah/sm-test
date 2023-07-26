@@ -1,4 +1,4 @@
-# Project: SM
+# Project: Sekawan Media
 # 📁 Collection: account 
 
 
@@ -387,20 +387,47 @@
 ## End-point: Upload Image
 ### Method: POST
 >```
->localhost:8081/v1/upload/image
+>localhost:8081/v1/upload
 >```
 ### Body formdata
 
 |Param|value|Type|
 |---|---|---|
-|file|/Users/bimosyahputro/Downloads/loading.mp4|file|
+|file|/Users/bimosyahputro/Downloads/download.jpeg|file|
 
 
-### 🔑 Authentication noauth
+### Response: 200
+```json
+{
+    "success": true,
+    "data": "https://test-ms-bucket.s3.amazonaws.com/2023-07-26T21%3A33%3A15.003162_download.jpeg"
+}
+```
 
-|Param|value|Type|
-|---|---|---|
 
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Authentication
+### Method: POST
+>```
+>http://localhost:8081/authenticate
+>```
+### Body (**raw**)
+
+```json
+{
+    "username":"halo1",
+    "password":"halo"
+}
+```
+
+### Response: 200
+```json
+{
+    "success": true,
+    "data": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoYWxvMSIsImV4cCI6MTY5MDM5OTgyNywiaWF0IjoxNjkwMzgxODI3fQ.i6TupP7huINZapg7Pc_83SE8HI5iG2jQHmJJpzsNe0LAQSL-JJMctjcSmW7VtKtkIiJXF9tlcEDsB-3AtAY2nw"
+}
+```
 
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
