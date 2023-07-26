@@ -22,7 +22,7 @@ this service has 3 module
 * farmer
 
 This service applied  ✅ Implement HTTP Method ✅ Implement Hit Rate Limit<br /> ✅ Implement Error Handling 
-✅ API Doc  <br />
+✅ API Doc ✅ JWT  <br />
 
 
 ## Architecture Diagram
